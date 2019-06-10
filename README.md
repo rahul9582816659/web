@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Web
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
@@ -29,3 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Nginx listen on 80
 Docker just copy dist to nginx dir
 Dokcer Compose : mapping port 4200 to 80 of nginx
+=======
+# web
+web
+>>>>>>> 8006b5006bed8d7c9330cff7ede9a64ab27ea571
