@@ -1,0 +1,38 @@
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.brand{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+
+  flex-basis: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.nav-buttons{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.nav-buttons a{
+  text-decoration: none;
+  font-size: 15px;
+
+  display: inline-block;
+  padding: 5px;
+  margin: 0 5px;
+  color: white;
+}
+
+.nav-buttons :hover{
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <a href="#" class="brand">Angular</a>
+
+    <div class="nav-buttons">
+      <a  *ngIf="!authSer.isLoggedIn()" (click)="signIn()">Signin</a>
+      <a  *ngIf="authSer.isLoggedIn()" (click)="logout()">Logout</a>
+    </div>
+
+  </mat-toolbar-row>
+</mat-toolbar>

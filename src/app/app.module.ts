@@ -9,22 +9,28 @@ import {BasicAuthInterceptorService} from './interceptor/basic-auth-interceptor.
 import { LoginComponent } from './component/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from '../app-material.module';
+import { NavigationComponent } from './component/navigation/navigation.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {APP_BASE_HREF} from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [
-    {provide: HTTP_INTERCEPTORS, useClass: BasicAuthInterceptorService, multi: true}
+    {provide: HTTP_INTERCEPTORS, useClass: BasicAuthInterceptorService, multi: true},
+    {provide: APP_BASE_HREF, useValue: '/'}
   ],
   bootstrap: [AppComponent]
 })
