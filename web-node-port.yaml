@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: web-node-pod
+  name: web-node-port
 spec:
   type: NodePort
   ports:
-    - port: 3051
-      targetPort: 3000
-      nodePort: 31515
+    - port: 8080
+      targetPort: 8080
+      nodePort: 30000
   selector:
     component: web

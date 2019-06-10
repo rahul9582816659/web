@@ -9,4 +9,4 @@ spec:
     - name: client
       image: thecrazzyrahul/web
       ports:
-        - containerPort: 3000
+        - containerPort: 8080
